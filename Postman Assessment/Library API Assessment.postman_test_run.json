@@ -1,0 +1,127 @@
+{
+	"id": "8eefca93-447f-4f79-81f9-953dd1edce45",
+	"name": "Library API Assessment",
+	"timestamp": "2025-09-19T21:23:50.790Z",
+	"collection_id": "47456014-3a979194-6d71-4ff2-b6ce-816e7431110e",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 5,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-09-19T21:23:48.504Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "5a005ba7-6362-4ffd-a664-23185e23dcee",
+			"name": "createBook",
+			"url": "https://library-api.postmanlabs.com/books",
+			"time": 373,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response has book ID": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has book ID": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				373
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response has book ID": true
+				}
+			]
+		},
+		{
+			"id": "2c358656-a6c1-4ab4-829c-c7eaeff65a4f",
+			"name": "updateBook",
+			"url": "https://library-api.postmanlabs.com/books/269983ff-6566-4189-93f6-bfd01e01d9d3",
+			"time": 391,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Your test name": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Your test name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				391
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Your test name": true
+				}
+			]
+		},
+		{
+			"id": "73d77f78-25ca-4b13-9553-2988f0663f1a",
+			"name": "deleteBook",
+			"url": "https://library-api.postmanlabs.com/books/269983ff-6566-4189-93f6-bfd01e01d9d3",
+			"time": 350,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				350
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1114,
+	"collection": {
+		"requests": [
+			{
+				"id": "5a005ba7-6362-4ffd-a664-23185e23dcee",
+				"method": "POST"
+			},
+			{
+				"id": "2c358656-a6c1-4ab4-829c-c7eaeff65a4f",
+				"method": "PATCH"
+			},
+			{
+				"id": "73d77f78-25ca-4b13-9553-2988f0663f1a",
+				"method": "DELETE"
+			}
+		]
+	}
+}
